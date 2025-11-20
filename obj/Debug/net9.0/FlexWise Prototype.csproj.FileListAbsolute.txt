@@ -1,0 +1,236 @@
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/appsettings.Development.json
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/appsettings.json
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/FlexWise Prototype.staticwebassets.runtime.json
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/FlexWise Prototype.staticwebassets.endpoints.json
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/FlexWise Prototype
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/FlexWise Prototype.deps.json
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/FlexWise Prototype.runtimeconfig.json
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/FlexWise Prototype.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/FlexWise Prototype.pdb
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/FlexWise Prototype.GeneratedMSBuildEditorConfig.editorconfig
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/FlexWise Prototype.AssemblyInfoInputs.cache
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/FlexWise Prototype.AssemblyInfo.cs
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/FlexWise Prototype.csproj.CoreCompileInputs.cache
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/FlexWise Prototype.MvcApplicationPartsAssemblyInfo.cache
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/FlexWise Prototype.RazorAssemblyInfo.cache
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/FlexWise Prototype.RazorAssemblyInfo.cs
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/scopedcss/bundle/FlexWise Prototype.styles.css
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/scopedcss/projectbundle/FlexWise Prototype.bundle.scp.css
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/y4nscs6i11-lugek5hnai.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/dh9e0nq7hg-61n19gt1b8.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/xxubpeyuqa-fr7q2aak1r.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/8ojibfc9gr-bqjiyaj88i.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/6tx9563jfq-c2jlpeoesf.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/qy7xpp1max-erw9l3u2r3.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/ci17430ggf-aexeepp0ev.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/f7p5y4r2nh-d7shbmvgxk.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/wqw45epz8l-ausgxo2sd3.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/zq637glwe0-k8d9w2qqmf.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/2fk5ac86si-cosvhxvwiu.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/zp2xwi0hze-ub07r2b239.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/o352gdjo03-fvhpjtyr6v.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/r7t1uek9ni-b7pk76d08c.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/be0n3j3c16-fsbi9cje9m.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/q81id2hej6-rzd6atqjts.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/gx1p3spyoa-ee0r1s7dh0.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/w94zsos0ng-dxx9fxp4il.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/unkz7c7bd4-jd9uben2k1.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/hfk4yy4dna-khv3u5hwcm.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/1z1cimjgq8-r4e9w2rdcm.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/kpc0s2dnem-lcd1t2u6c8.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/7o0wh3t246-c2oey78nd0.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/zbupd4m8qx-tdbxkamptv.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/7barocs4is-j5mq2jizvt.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/vfdoo17lcc-06098lyss8.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/xx9mnpvo8e-nvvlpmu67g.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/31vesolsw7-s35ty4nyc5.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/qzyfvlvucz-pj5nd1wqec.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/5qd9vuf2sa-46ein0sx1k.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/17k6fs1rnd-v0zj4ognzu.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/16wg1wiy1o-37tfw0ft22.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/uw9w4ge1t8-hrwsygsryq.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/ml4uqt4060-pk9g2wxc8p.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/sp6bq5u3fm-ft3s53vfgj.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/vzfc5c5h3h-6cfz1n2cew.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/umqfrwwqfi-6pdc2jztkx.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/niu5812fvj-493y06b0oq.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/0uxngmnvf1-iovd86k7lj.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/tlrs6iezjs-vr1egmr9el.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/ja4vcz39g2-kbrnm935zg.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/2pyhv1jhcd-jj8uyg4cgr.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/0zvjrbpumm-y7v9cxd14o.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/ytzeuo3epe-notf2xhcfb.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/bgggk9awqt-h1s4sie4z3.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/f4fplgn9h8-63fj8s7r0e.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/iyyci9w1ht-0j3bgjxly4.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/0i9drb5ydb-47otxtyo56.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/wqek5jinv9-4v8eqarkd7.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/cy0zcx2yry-l3n5xuwxn8.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/s9tb4ffunf-ilo7uva0vt.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/xbvis0ctug-qlccset4i1.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/a6a8f0zmts-lzl9nlhx6b.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/u8wtl66dqm-ag7o75518u.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/g5vrgsglze-xzw0cte36n.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/33wz4ua9c5-0i3buxo5is.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/wr3d9167yp-o1o13a6vjx.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/dw4thf5nhd-ttgo8qnofa.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/17upg7qnf2-2z0ns9nrw6.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/mjokdgunte-muycvpuwrr.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/gjvr438xzx-87fc7y1x7t.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/dh318023qp-jfsiqqwiad.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/cb5cegube9-ta1eju1l99.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/compressed/0f0uc7hnwb-ta1eju1l99.gz
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/staticwebassets.build.json
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/staticwebassets.development.json
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/staticwebassets/msbuild.FlexWise Prototype.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/staticwebassets/msbuild.FlexWise Prototype.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/staticwebassets/msbuild.build.FlexWise Prototype.props
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.FlexWise Prototype.props
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.FlexWise Prototype.props
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/staticwebassets.pack.json
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/FlexWise Prototype.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/refint/FlexWise Prototype.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/FlexWise Prototype.pdb
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/FlexWise Prototype.genruntimeconfig.cache
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/ref/FlexWise Prototype.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Azure.Core.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Azure.Identity.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Humanizer.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Build.Locator.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.CodeAnalysis.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Data.SqlClient.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Extensions.Identity.Core.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Extensions.Logging.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Extensions.Options.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Identity.Client.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Identity.Client.Extensions.Msal.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.SqlServer.Server.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Microsoft.Win32.SystemEvents.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/Mono.TextTemplating.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/System.ClientModel.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/System.CodeDom.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/System.Composition.AttributedModel.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/System.Composition.Convention.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/System.Composition.Hosting.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/System.Composition.Runtime.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/System.Composition.TypedParts.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/System.Configuration.ConfigurationManager.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/System.Drawing.Common.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/System.Formats.Asn1.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/System.Memory.Data.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/System.Runtime.Caching.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/System.Security.Cryptography.ProtectedData.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/System.Security.Permissions.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/System.Text.Json.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/System.Windows.Extensions.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/FlexWise Prototype.csproj.AssemblyReference.cache
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/FlexWise.6F743B3E.Up2Date
