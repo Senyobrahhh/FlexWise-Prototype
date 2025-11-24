@@ -1,0 +1,44 @@
+@model FlexWise_Prototype.Models.AddExerciseToWorkoutModel
+
+<h1>Add Exercise to Workout</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="WorkoutId" />
+
+    <div class="form-group">
+        <label>Exercise</label>
+        <select asp-for="ExerciseTemplateId" class="form-control">
+            @foreach (var e in Model.AvailableExercises!)
+            {
+                <option value="@e.Id">@e.Name (@e.TargetMuscleGroup)</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Order"></label>
+        <input asp-for="Order" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="RecommendedSets"></label>
+        <input asp-for="RecommendedSets" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="RecommendedReps"></label>
+        <input asp-for="RecommendedReps" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="RecommendedWeight"></label>
+        <input asp-for="RecommendedWeight" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Notes"></label>
+        <textarea asp-for="Notes" class="form-control"></textarea>
+    </div>
+
+    <button class="btn btn-success mt-3" type="submit">Save</button>
+</form>

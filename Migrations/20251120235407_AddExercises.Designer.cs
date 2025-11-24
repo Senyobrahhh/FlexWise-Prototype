@@ -4,6 +4,7 @@ using FlexWise_Prototype.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FlexWise_Prototype.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251120235407_AddExercises")]
+    partial class AddExercises
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -180,41 +183,6 @@ namespace FlexWise_Prototype.Migrations
                     b.ToTable("FitnessPrograms");
                 });
 
-            modelBuilder.Entity("FlexWise_Prototype.Entities.SetLog", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ExerciseTemplateId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Notes")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Reps")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SetNumber")
-                        .HasColumnType("int");
-
-                    b.Property<double?>("Weight")
-                        .HasColumnType("float");
-
-                    b.Property<int>("WorkoutSessionId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ExerciseTemplateId");
-
-                    b.HasIndex("WorkoutSessionId", "ExerciseTemplateId", "SetNumber");
-
-                    b.ToTable("SetLogs");
-                });
-
             modelBuilder.Entity("FlexWise_Prototype.Entities.Workout", b =>
                 {
                     b.Property<int>("Id")
@@ -281,35 +249,6 @@ namespace FlexWise_Prototype.Migrations
                         .IsUnique();
 
                     b.ToTable("WorkoutExerciseTemplates");
-                });
-
-            modelBuilder.Entity("FlexWise_Prototype.Entities.WorkoutSession", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime?>("EndTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("StartTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("WorkoutId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.HasIndex("WorkoutId");
-
-                    b.ToTable("WorkoutSessions");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -454,25 +393,6 @@ namespace FlexWise_Prototype.Migrations
                     b.Navigation("Creator");
                 });
 
-            modelBuilder.Entity("FlexWise_Prototype.Entities.SetLog", b =>
-                {
-                    b.HasOne("FlexWise_Prototype.Entities.ExerciseTemplate", "ExerciseTemplate")
-                        .WithMany()
-                        .HasForeignKey("ExerciseTemplateId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("FlexWise_Prototype.Entities.WorkoutSession", "WorkoutSession")
-                        .WithMany("Sets")
-                        .HasForeignKey("WorkoutSessionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ExerciseTemplate");
-
-                    b.Navigation("WorkoutSession");
-                });
-
             modelBuilder.Entity("FlexWise_Prototype.Entities.Workout", b =>
                 {
                     b.HasOne("FlexWise_Prototype.Entities.FitnessProgram", "FitnessProgram")
@@ -499,23 +419,6 @@ namespace FlexWise_Prototype.Migrations
                         .IsRequired();
 
                     b.Navigation("ExerciseTemplate");
-
-                    b.Navigation("Workout");
-                });
-
-            modelBuilder.Entity("FlexWise_Prototype.Entities.WorkoutSession", b =>
-                {
-                    b.HasOne("FlexWise_Prototype.Entities.AppUser", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
-
-                    b.HasOne("FlexWise_Prototype.Entities.Workout", "Workout")
-                        .WithMany()
-                        .HasForeignKey("WorkoutId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
 
                     b.Navigation("Workout");
                 });
@@ -579,11 +482,6 @@ namespace FlexWise_Prototype.Migrations
             modelBuilder.Entity("FlexWise_Prototype.Entities.Workout", b =>
                 {
                     b.Navigation("Exercises");
-                });
-
-            modelBuilder.Entity("FlexWise_Prototype.Entities.WorkoutSession", b =>
-                {
-                    b.Navigation("Sets");
                 });
 #pragma warning restore 612, 618
         }

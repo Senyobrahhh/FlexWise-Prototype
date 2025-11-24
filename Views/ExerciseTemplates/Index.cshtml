@@ -1,0 +1,25 @@
+@model List<FlexWise_Prototype.Entities.ExerciseTemplate>
+
+<h1>Exercises</h1>
+
+<a class="btn btn-primary" asp-action="Create">Create New Exercise</a>
+
+<table class="table mt-3">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Muscle Group</th>
+        <th>Equipment</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var e in Model)
+    {
+        <tr>
+            <td>@e.Name</td>
+            <td>@e.TargetMuscleGroup</td>
+            <td>@e.EquipmentType</td>
+        </tr>
+    }
+    </tbody>
+</table>

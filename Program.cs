@@ -22,6 +22,12 @@ builder.Services
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 
+// Tells the auth system where the login page is
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Account/Login";
+});
+
 // 3. MVC
 builder.Services.AddControllersWithViews();
 

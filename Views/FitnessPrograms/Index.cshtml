@@ -1,0 +1,33 @@
+@model List<FlexWise_Prototype.Entities.FitnessProgram>
+
+<h1>Fitness Programs</h1>
+
+<a class="btn btn-primary" href="/FitnessPrograms/Create">Create New</a>
+
+<table class="table mt-3">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Goal</th>
+        <th>Duration</th>
+        <th>Creator</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>
+                <a asp-controller="FitnessPrograms"
+                   asp-action="Details"
+                   asp-route-id="@p.Id">
+                    @p.Title
+                </a>
+            </td>
+            <td>@p.Goal</td>
+            <td>@p.ProgramDuration</td>
+            <td>@p.Creator?.DisplayName</td>
+        </tr>
+    }
+    </tbody>
+</table>

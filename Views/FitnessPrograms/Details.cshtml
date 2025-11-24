@@ -1,0 +1,53 @@
+@model FlexWise_Prototype.Entities.FitnessProgram
+
+<h1>@Model.Title</h1>
+<p>@Model.Description</p>
+
+<p>
+    Goal: @Model.Goal <br />
+    Duration: @Model.ProgramDuration
+</p>
+
+<h2>Workouts in this program</h2>
+
+<table class="table mt-3">
+    <thead>
+    <tr>
+        <th>Day</th>
+        <th>Title</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    @foreach (var w in Model.Workouts.OrderBy(w => w.DayIndex))
+    {
+        <tr>
+            <td>@w.DayIndex</td>
+            <td>@w.Title</td>
+            <td>@w.Description</td>
+            <td>
+                <a asp-controller="Workouts"
+                   asp-action="AddExercise"
+                   asp-route-workoutId="@w.Id"
+                   class="btn btn-sm btn-secondary">
+                    Add Exercise
+                </a>
+                <a asp-controller="WorkoutSessions"
+                   asp-action="Start"
+                   asp-route-workoutId="@w.Id"
+                   class="btn btn-sm btn-primary ms-1">
+                    Start workout
+                </a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<a class="btn btn-sm btn-primary"
+   asp-controller="Workouts"
+   asp-action="Create"
+   asp-route-programId="@Model.Id">
+    Add Workout
+</a>

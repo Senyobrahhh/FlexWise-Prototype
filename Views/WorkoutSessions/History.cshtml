@@ -1,0 +1,33 @@
+@model List<FlexWise_Prototype.Entities.WorkoutSession>
+
+<h1>Workout History</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Program</th>
+        <th>Workout</th>
+        <th>Started</th>
+        <th>Finished</th>
+        <th>Duration (min)</th>
+        <th>Sets logged</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var s in Model)
+    {
+        var durationMinutes = s.EndTime.HasValue
+            ? (s.EndTime.Value - s.StartTime).TotalMinutes
+            : (double?)null;
+
+        <tr>
+            <td>@s.Workout?.FitnessProgram?.Title</td>
+            <td>@s.Workout?.Title</td>
+            <td>@s.StartTime</td>
+            <td>@(s.EndTime?.ToString() ?? "-")</td>
+            <td>@(durationMinutes.HasValue ? Math.Round(durationMinutes.Value) : null)</td>
+            <td>@(s.Sets?.Count ?? 0)</td>
+        </tr>
+    }
+    </tbody>
+</table>

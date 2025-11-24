@@ -1,0 +1,27 @@
+@model FlexWise_Prototype.Entities.ExerciseTemplate
+
+<h1>Create Exercise</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TargetMuscleGroup"></label>
+        <input asp-for="TargetMuscleGroup" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EquipmentType"></label>
+        <input asp-for="EquipmentType" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+
+    <button class="btn btn-success mt-3" type="submit">Save</button>
+</form>

@@ -234,3 +234,4 @@
 /Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
 /Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/FlexWise Prototype.csproj.AssemblyReference.cache
 /Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/FlexWise.6F743B3E.Up2Date
+/Users/enyochorbadzhiyski/Documents/Projects/FlexWise Prototype/FlexWise Prototype/obj/Debug/net9.0/FlexWise Prototype.sourcelink.json
