@@ -27,17 +27,18 @@
             <td>@w.Title</td>
             <td>@w.Description</td>
             <td>
-                <a asp-controller="Workouts"
-                   asp-action="AddExercise"
-                   asp-route-workoutId="@w.Id"
-                   class="btn btn-sm btn-secondary">
-                    Add Exercise
-                </a>
                 <a asp-controller="WorkoutSessions"
                    asp-action="Start"
                    asp-route-workoutId="@w.Id"
                    class="btn btn-sm btn-primary ms-1">
                     Start workout
+                </a>
+                
+                <a asp-controller="Workouts"
+                   asp-action="Details"
+                   asp-route-id="@w.Id"
+                   class="btn btn-sm btn-outline-secondary ms-1">
+                    View workout
                 </a>
             </td>
         </tr>

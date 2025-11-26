@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FlexWise_Prototype.Entities;
 
@@ -34,6 +35,8 @@ public class FitnessProgram
     
     //Reference to creator
     public string CreatorUserId { get; set; } = "";
+    
+    [ForeignKey(nameof(CreatorUserId))]
     public AppUser? Creator { get; set; }
     
     public bool IsPublic { get; set; } = true;

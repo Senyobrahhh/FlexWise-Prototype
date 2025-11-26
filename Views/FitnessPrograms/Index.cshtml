@@ -11,22 +11,34 @@
         <th>Goal</th>
         <th>Duration</th>
         <th>Creator</th>
+        <th>@* View/Delete *@</th>
     </tr>
     </thead>
     <tbody>
     @foreach (var p in Model)
     {
         <tr>
-            <td>
-                <a asp-controller="FitnessPrograms"
-                   asp-action="Details"
-                   asp-route-id="@p.Id">
-                    @p.Title
-                </a>
-            </td>
+            <td>@p.Title</td>
             <td>@p.Goal</td>
             <td>@p.ProgramDuration</td>
             <td>@p.Creator?.DisplayName</td>
+            <td>
+                <a asp-controller="FitnessPrograms"
+                   asp-action="Details"
+                   asp-route-id="@p.Id"
+                   class="btn btn-sm btn-primary">
+                    View
+                </a>
+                <form asp-controller="FitnessPrograms"
+                      asp-action="RemoveProgram"
+                      method="post"
+                      style="display:inline">
+                    <input type="hidden" name="id" value="@p.Id" />
+                    <button type="submit" class="btn btn-sm btn-danger">
+                        Remove
+                    </button>
+                </form>
+            </td>
         </tr>
     }
     </tbody>

@@ -1,0 +1,75 @@
+@model FlexWise_Prototype.Entities.Workout
+
+<h1>Workout: @Model.Title</h1>
+
+<p>
+    Program: 
+    <a asp-controller="FitnessPrograms"
+       asp-action="Details"
+       asp-route-id="@Model.FitnessProgramId">
+        @Model.FitnessProgram?.Title
+    </a>
+</p>
+
+<p>
+    Day: @Model.DayIndex <br />
+    @Model.Description
+</p>
+
+<h2>Exercises in this workout</h2>
+
+<a class="btn btn-sm btn-primary mb-3"
+   asp-controller="Workouts"
+   asp-action="AddExercise"
+   asp-route-workoutId="@Model.Id">
+    Add Exercise
+</a>
+
+@if (Model.Exercises == null || !Model.Exercises.Any())
+{
+    <p>No exercises yet.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Order</th>
+            <th>Name</th>
+            <th>Sets x Reps</th>
+            <th>Notes</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var e in Model.Exercises.OrderBy(x => x.Order))
+        {
+            <tr>
+                <td>@e.Order</td>
+                <td>@e.ExerciseTemplate?.Name (@e.ExerciseTemplate?.TargetMuscleGroup)</td>
+                <td>@e.RecommendedSets x @e.RecommendedReps</td>
+                <td>@e.Notes</td>
+                <td>
+                    @* later: add Edit link here *@
+                    <form asp-controller="Workouts"
+                          asp-action="RemoveExercise"
+                          method="post"
+                          style="display:inline">
+                        <input type="hidden" name="id" value="@e.Id" />
+                        <button type="submit" class="btn btn-sm btn-danger">
+                            Delete
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+<a class="btn btn-secondary mt-3"
+   asp-controller="FitnessPrograms"
+   asp-action="Details"
+   asp-route-id="@Model.FitnessProgramId">
+    Back to Program
+</a>

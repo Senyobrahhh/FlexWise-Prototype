@@ -10,6 +10,7 @@
         <th>Name</th>
         <th>Muscle Group</th>
         <th>Equipment</th>
+        <th>@*Action*@</th>
     </tr>
     </thead>
     <tbody>
@@ -19,6 +20,17 @@
             <td>@e.Name</td>
             <td>@e.TargetMuscleGroup</td>
             <td>@e.EquipmentType</td>
+            <td>
+                <form asp-controller="ExerciseTemplates"
+                      asp-action="Delete"
+                      method="post"
+                      style="display:inline">
+                    <input type="hidden" name="id" value="@e.Id" />
+                    <button type="submit" class="btn btn-sm btn-danger">
+                        Delete
+                    </button>
+                </form>
+            </td>
         </tr>
     }
     </tbody>

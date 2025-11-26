@@ -47,10 +47,14 @@ public class WorkoutsController : Controller
         var workout = await _context.Workouts.FindAsync(workoutId);
         if (workout == null) return NotFound();
 
+        var maxOrder = await _context.WorkoutExerciseTemplates
+            .Where(x => x.WorkoutId == workoutId)
+            .MaxAsync(x => (int?)x.Order) ?? 0;
+
+        
         var model = new AddExerciseToWorkoutModel
         {
             WorkoutId = workoutId,
-            Order = 1,
             RecommendedSets = 3,
             RecommendedReps = 10,
             AvailableExercises = await _context.ExerciseTemplates.ToListAsync()
@@ -68,12 +72,16 @@ public class WorkoutsController : Controller
             model.AvailableExercises = await _context.ExerciseTemplates.ToListAsync();
             return View(model);
         }
+        
+        var maxOrder = await _context.WorkoutExerciseTemplates
+            .Where(x => x.WorkoutId == model.WorkoutId)
+            .MaxAsync(x => (int?)x.Order) ?? 0;
 
         var link = new WorkoutExerciseTemplate
         {
             WorkoutId = model.WorkoutId,
             ExerciseTemplateId = model.ExerciseTemplateId,
-            Order = model.Order,
+            Order = maxOrder + 1,
             RecommendedSets = model.RecommendedSets,
             RecommendedReps = model.RecommendedReps,
             RecommendedWeight = model.RecommendedWeight,
@@ -83,7 +91,42 @@ public class WorkoutsController : Controller
         _context.WorkoutExerciseTemplates.Add(link);
         await _context.SaveChangesAsync();
 
-        return RedirectToAction("Details", "FitnessPrograms",
-            new { id = (await _context.Workouts.FindAsync(model.WorkoutId))!.FitnessProgramId });
+       // return RedirectToAction("Details", "FitnessPrograms",
+       //    new { id = (await _context.Workouts.FindAsync(model.WorkoutId))!.FitnessProgramId });
+       return RedirectToAction("Details", "Workouts", new { id = model.WorkoutId });
+    }
+    
+    // GET: /Workouts/Details/5
+    public async Task<IActionResult> Details(int id)
+    {
+        var workout = await _context.Workouts
+            .Include(w => w.FitnessProgram)
+            .Include(w => w.Exercises)
+            .ThenInclude(we => we.ExerciseTemplate)
+            .FirstOrDefaultAsync(w => w.Id == id);
+
+        if (workout == null) return NotFound();
+
+        return View(workout);
+    }
+    
+    // POST: /Workouts/RemoveExercise
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> RemoveExercise(int id)
+    {
+        var link = await _context.WorkoutExerciseTemplates
+            .Include(x => x.Workout)
+            .FirstOrDefaultAsync(x => x.Id == id);
+
+        if (link == null)
+            return NotFound();
+
+        var workoutId = link.WorkoutId;
+
+        _context.WorkoutExerciseTemplates.Remove(link);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Details), new { id = workoutId });
     }
 }

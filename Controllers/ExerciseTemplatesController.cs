@@ -42,4 +42,27 @@ public class ExerciseTemplatesController : Controller
 
         return RedirectToAction(nameof(Index));
     }
+    
+    // POST: /ExerciseTemplates/Delete
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var template = await _context.ExerciseTemplates.FindAsync(id);
+        if (template == null)
+            return NotFound();
+
+        // Remove all links that use this exercise in workouts
+        var links = await _context.WorkoutExerciseTemplates
+            .Where(x => x.ExerciseTemplateId == id)
+            .ToListAsync();
+
+        _context.WorkoutExerciseTemplates.RemoveRange(links);
+        _context.ExerciseTemplates.Remove(template);
+
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Index));
+    }
+    
 }
