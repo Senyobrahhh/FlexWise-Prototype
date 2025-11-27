@@ -116,4 +116,31 @@ public class WorkoutSessionsController : Controller
 
         return View(sessions);
     }
+    
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    [Authorize]
+    public async Task<IActionResult> ClearHistory()
+    {
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+        var sessions = await _context.WorkoutSessions
+            .Where(s => s.UserId == userId || s.UserId == null)
+            .Include(s => s.Sets)
+            .ToListAsync();
+
+        if (sessions.Count == 0)
+            return RedirectToAction(nameof(History));
+
+        var sets = sessions.SelectMany(s => s.Sets).ToList();
+        if (sets.Count > 0)
+        {
+            _context.SetLogs.RemoveRange(sets);
+        }
+
+        _context.WorkoutSessions.RemoveRange(sessions);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(History));
+    }
 }

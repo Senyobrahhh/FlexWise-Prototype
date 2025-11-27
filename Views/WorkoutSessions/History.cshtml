@@ -2,6 +2,18 @@
 
 <h1>Workout History</h1>
 
+@if (Model.Any())
+{
+    <form asp-controller="WorkoutSessions"
+          asp-action="ClearHistory"
+          method="post"
+          class="mb-3">
+        <button type="submit" class="btn btn-sm btn-danger">
+            Clear history
+        </button>
+    </form>
+}
+
 <table class="table">
     <thead>
     <tr>
