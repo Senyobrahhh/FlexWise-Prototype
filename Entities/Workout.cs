@@ -9,8 +9,7 @@ public class Workout
     // FK to FitnessProgram
     public int FitnessProgramId { get; set; }
     public FitnessProgram? FitnessProgram { get; set; }
-
-    // position in the program (Day 1, Day 2, etc.)
+    
     public int DayIndex { get; set; }
 
     [Required, MaxLength(120)]

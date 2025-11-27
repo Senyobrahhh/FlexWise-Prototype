@@ -28,10 +28,17 @@ public class WorkoutsController : Controller
     
     // POST: /Workouts/Create
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(Workout workout)
     {
         if (!ModelState.IsValid)
             return View(workout);
+        
+        var maxDayIndex = await _context.Workouts
+            .Where(w => w.FitnessProgramId == workout.FitnessProgramId)
+            .MaxAsync(w => (int?)w.DayIndex) ?? 0;
+
+        workout.DayIndex = maxDayIndex + 1;
 
         _context.Workouts.Add(workout);
         await _context.SaveChangesAsync();

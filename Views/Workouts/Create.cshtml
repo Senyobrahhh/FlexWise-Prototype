@@ -4,15 +4,10 @@
     var programId = (int)ViewBag.ProgramId;
 }
 
-<h1>Add Workout</h1>
+<h1>Create Workout</h1>
 
 <form method="post">
     <input type="hidden" asp-for="FitnessProgramId" value="@programId" />
-
-    <div class="form-group">
-        <label asp-for="DayIndex"></label>
-        <input asp-for="DayIndex" class="form-control" />
-    </div>
 
     <div class="form-group">
         <label asp-for="Title"></label>
