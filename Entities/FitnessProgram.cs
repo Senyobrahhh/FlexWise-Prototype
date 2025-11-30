@@ -1,15 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using FlexWise_Prototype.Enums;
 
 namespace FlexWise_Prototype.Entities;
-
-public enum ProgramDuration
-{
-    OneWeek = 7,
-    TwoWeeks = 14,
-    ThreeWeeks = 21,
-    OneMonth = 28
-}
 
 public enum GoalType
 {

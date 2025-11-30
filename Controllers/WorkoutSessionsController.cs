@@ -34,8 +34,8 @@ public class WorkoutSessionsController : Controller
         var session = new WorkoutSession
         {
             WorkoutId = workoutId,
+            UserId = userId,
             StartTime = DateTime.UtcNow,
-            // later: UserId = User.FindFirstValue(ClaimTypes.NameIdentifier)
         };
 
         _context.WorkoutSessions.Add(session);
@@ -66,11 +66,43 @@ public class WorkoutSessionsController : Controller
     
     // POST: /WorkoutSessions/AddSet
     [HttpPost]
+    [ValidateAntiForgeryToken]
+    [Authorize]
     public async Task<IActionResult> AddSet(LogSetModel model)
     {
+        // Make sure the exercise still exists
+        var exists = await _context.ExerciseTemplates
+            .AnyAsync(e => e.Id == model.ExerciseTemplateId);
+
+        if (!exists)
+        {
+            ModelState.AddModelError("ExerciseTemplateId", "Selected exercise no longer exists.");
+
+            // Reload session + exercises and show Log view again
+            var session = await _context.WorkoutSessions
+                .Include(s => s.Workout)
+                .ThenInclude(w => w.Exercises)
+                .ThenInclude(we => we.ExerciseTemplate)
+                .Include(s => s.Sets)
+                .FirstOrDefaultAsync(s => s.Id == model.WorkoutSessionId);
+
+            ViewBag.Session = session;
+            model.WorkoutSessionId = session!.Id;
+
+            return View("Log", model);
+        }
+
         if (!ModelState.IsValid)
         {
-            return RedirectToAction(nameof(Log), new { id = model.WorkoutSessionId });
+            var session = await _context.WorkoutSessions
+                .Include(s => s.Workout)
+                .ThenInclude(w => w.Exercises)
+                .ThenInclude(we => we.ExerciseTemplate)
+                .Include(s => s.Sets)
+                .FirstOrDefaultAsync(s => s.Id == model.WorkoutSessionId);
+
+            ViewBag.Session = session;
+            return View("Log", model);
         }
 
         var set = new SetLog

@@ -40,6 +40,16 @@
                    class="btn btn-sm btn-outline-secondary ms-1">
                     View workout
                 </a>
+                
+                <form asp-controller="Workouts"
+                      asp-action="RemoveWorkout"
+                      method="post"
+                      style="display:inline">
+                    <input type="hidden" name="id" value="@w.Id" />
+                    <button type="submit" class="btn btn-sm btn-danger ms-1">
+                        Remove
+                    </button>
+                </form>
             </td>
         </tr>
     }

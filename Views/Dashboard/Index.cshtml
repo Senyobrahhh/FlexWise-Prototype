@@ -1,0 +1,119 @@
+@model FlexWise_Prototype.Models.DashboardViewModel
+
+<h1>Welcome, @Model.DisplayName</h1>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card p-3 mb-3">
+            <h4>Overview</h4>
+            <p>
+                <strong>Total workouts completed:</strong>
+                @Model.TotalWorkoutsCompleted
+            </p>
+            <p>
+                <strong>Last workout:</strong>
+                @(Model.LastWorkoutDate?.ToString("g") ?? "No workouts yet")
+            </p>
+        </div>
+
+        <div class="card p-3 mb-3">
+            <h4>Quick actions</h4>
+            <a class="btn btn-primary btn-sm mb-2"
+               asp-controller="FitnessPrograms"
+               asp-action="Create">
+                Create new program
+            </a>
+            <br />
+            <a class="btn btn-outline-primary btn-sm mb-2"
+               asp-controller="FitnessPrograms"
+               asp-action="Index">
+                View my programs
+            </a>
+            <br />
+            <a class="btn btn-outline-primary btn-sm mb-2"
+               asp-controller="ExerciseTemplates"
+               asp-action="Index">
+                Manage exercises
+            </a>
+            <br />
+            <a class="btn btn-outline-secondary btn-sm"
+               asp-controller="WorkoutSessions"
+               asp-action="History">
+                View full history
+            </a>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="card p-3 mb-3">
+            <h4>My programs</h4>
+            @if (!Model.MyPrograms.Any())
+            {
+                <p>You do not have any programs yet.</p>
+            }
+            else
+            {
+                <table class="table table-sm">
+                    <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Goal</th>
+                        <th>Duration</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var p in Model.MyPrograms)
+                    {
+                        <tr>
+                            <td>@p.Title</td>
+                            <td>@p.Goal</td>
+                            <td>@p.ProgramDuration</td>
+                            <td>
+                                <a asp-controller="FitnessPrograms"
+                                   asp-action="Details"
+                                   asp-route-id="@p.Id"
+                                   class="btn btn-sm btn-primary">
+                                    Open
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            }
+        </div>
+
+        <div class="card p-3">
+            <h4>Recent workouts</h4>
+            @if (!Model.RecentSessions.Any())
+            {
+                <p>No workouts logged yet.</p>
+            }
+            else
+            {
+                <table class="table table-sm">
+                    <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Program</th>
+                        <th>Workout</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var s in Model.RecentSessions)
+                    {
+                        <tr>
+                            <td>@s.StartTime.ToString("g")</td>
+                            <td>@s.Workout?.FitnessProgram?.Title</td>
+                            <td>@s.Workout?.Title</td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            }
+        </div>
+    </div>
+</div>

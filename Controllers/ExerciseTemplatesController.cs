@@ -43,7 +43,6 @@ public class ExerciseTemplatesController : Controller
         return RedirectToAction(nameof(Index));
     }
     
-    // POST: /ExerciseTemplates/Delete
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Delete(int id)
@@ -52,12 +51,27 @@ public class ExerciseTemplatesController : Controller
         if (template == null)
             return NotFound();
 
-        // Remove all links that use this exercise in workouts
+        // 1) Remove all set logs that reference this exercise
+        var sets = await _context.SetLogs
+            .Where(s => s.ExerciseTemplateId == id)
+            .ToListAsync();
+
+        if (sets.Count > 0)
+        {
+            _context.SetLogs.RemoveRange(sets);
+        }
+
+        // 2) Remove all workout-exercise links that reference this exercise
         var links = await _context.WorkoutExerciseTemplates
             .Where(x => x.ExerciseTemplateId == id)
             .ToListAsync();
 
-        _context.WorkoutExerciseTemplates.RemoveRange(links);
+        if (links.Count > 0)
+        {
+            _context.WorkoutExerciseTemplates.RemoveRange(links);
+        }
+
+        // 3) Remove the exercise template itself
         _context.ExerciseTemplates.Remove(template);
 
         await _context.SaveChangesAsync();

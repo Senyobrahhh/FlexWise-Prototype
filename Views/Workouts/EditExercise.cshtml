@@ -1,0 +1,52 @@
+@model FlexWise_Prototype.Models.EditWorkoutExerciseModel
+@using FlexWise_Prototype.Entities
+@using Microsoft.AspNetCore.Mvc.Rendering
+
+<h1>Edit Exercise in Workout</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="WorkoutId" />
+
+    <div class="form-group">
+        <label asp-for="ExerciseTemplateId">Exercise</label>
+        <select asp-for="ExerciseTemplateId"
+                class="form-control"
+                asp-items="@(new SelectList(Model.AvailableExercises, "Id", "Name"))">
+        </select>
+        <span asp-validation-for="ExerciseTemplateId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="RecommendedSets"></label>
+        <input asp-for="RecommendedSets" class="form-control" />
+        <span asp-validation-for="RecommendedSets" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="RecommendedReps"></label>
+        <input asp-for="RecommendedReps" class="form-control" />
+        <span asp-validation-for="RecommendedReps" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="RecommendedWeight"></label>
+        <input asp-for="RecommendedWeight" class="form-control" />
+        <span asp-validation-for="RecommendedWeight" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Notes"></label>
+        <textarea asp-for="Notes" class="form-control"></textarea>
+        <span asp-validation-for="Notes" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Save</button>
+
+    <a asp-controller="Workouts"
+       asp-action="Details"
+       asp-route-id="@Model.WorkoutId"
+       class="btn btn-secondary mt-3 ms-2">
+        Cancel
+    </a>
+</form>

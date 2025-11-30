@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlexWise Prototype")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95a0f65aae2e6be50f62531a43a93859a2961d84")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ea60865889dade7594bfdfb4153f963ad1e2725")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlexWise Prototype")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlexWise Prototype")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

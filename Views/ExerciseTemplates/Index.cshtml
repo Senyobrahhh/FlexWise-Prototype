@@ -1,5 +1,18 @@
 @model List<FlexWise_Prototype.Entities.ExerciseTemplate>
 
+@{
+    var showError =
+        (TempData["ErrorMessage"] is string errorMsg && !string.IsNullOrEmpty(errorMsg))
+        && !(Model?.Any() ?? false);   // only if there are still zero exercises
+}
+
+@if (showError)
+{
+    <div class="alert alert-warning">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
 <h1>Exercises</h1>
 
 <a class="btn btn-primary" asp-action="Create">Create New Exercise</a>

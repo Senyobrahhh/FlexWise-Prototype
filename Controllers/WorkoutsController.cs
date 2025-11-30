@@ -54,17 +54,21 @@ public class WorkoutsController : Controller
         var workout = await _context.Workouts.FindAsync(workoutId);
         if (workout == null) return NotFound();
 
-        var maxOrder = await _context.WorkoutExerciseTemplates
-            .Where(x => x.WorkoutId == workoutId)
-            .MaxAsync(x => (int?)x.Order) ?? 0;
+        var exercises = await _context.ExerciseTemplates.ToListAsync();
 
-        
+        // 👇 Guard: no templates => redirect user
+        if (!exercises.Any())
+        {
+            TempData["ErrorMessage"] = "You must create at least one exercise template before adding exercises to a workout.";
+            return RedirectToAction("Create", "ExerciseTemplates");
+        }
+
         var model = new AddExerciseToWorkoutModel
         {
             WorkoutId = workoutId,
             RecommendedSets = 3,
-            RecommendedReps = 10,
-            AvailableExercises = await _context.ExerciseTemplates.ToListAsync()
+            RecommendedReps = 12,
+            AvailableExercises = exercises
         };
 
         return View(model);
@@ -72,14 +76,26 @@ public class WorkoutsController : Controller
 
     // POST: /Workouts/AddExercise
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public async Task<IActionResult> AddExercise(AddExerciseToWorkoutModel model)
     {
+        // Check that the selected exercise actually exists
+        var exerciseExists = await _context.ExerciseTemplates
+            .AnyAsync(e => e.Id == model.ExerciseTemplateId);
+
+        if (!exerciseExists)
+        {
+            ModelState.AddModelError("ExerciseTemplateId", "Selected exercise does not exist. Please create an exercise template first.");
+            model.AvailableExercises = await _context.ExerciseTemplates.ToListAsync();
+            return View(model);
+        }
+
         if (!ModelState.IsValid)
         {
             model.AvailableExercises = await _context.ExerciseTemplates.ToListAsync();
             return View(model);
         }
-        
+
         var maxOrder = await _context.WorkoutExerciseTemplates
             .Where(x => x.WorkoutId == model.WorkoutId)
             .MaxAsync(x => (int?)x.Order) ?? 0;
@@ -98,9 +114,7 @@ public class WorkoutsController : Controller
         _context.WorkoutExerciseTemplates.Add(link);
         await _context.SaveChangesAsync();
 
-       // return RedirectToAction("Details", "FitnessPrograms",
-       //    new { id = (await _context.Workouts.FindAsync(model.WorkoutId))!.FitnessProgramId });
-       return RedirectToAction("Details", "Workouts", new { id = model.WorkoutId });
+        return RedirectToAction("Details", "Workouts", new { id = model.WorkoutId });
     }
     
     // GET: /Workouts/Details/5
@@ -135,5 +149,114 @@ public class WorkoutsController : Controller
         await _context.SaveChangesAsync();
 
         return RedirectToAction(nameof(Details), new { id = workoutId });
+    }
+    
+    // POST: /Workouts/RemoveWorkout
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> RemoveWorkout(int id)
+    {
+        // Load the workout and its exercise links
+        var workout = await _context.Workouts
+            .Include(w => w.Exercises)
+            .FirstOrDefaultAsync(w => w.Id == id);
+
+        if (workout == null)
+            return NotFound();
+
+        var programId = workout.FitnessProgramId;
+
+        // 1) Remove all sessions + sets for this workout
+        var sessions = await _context.WorkoutSessions
+            .Where(s => s.WorkoutId == id)
+            .Include(s => s.Sets)
+            .ToListAsync();
+
+        if (sessions.Count > 0)
+        {
+            var sets = sessions.SelectMany(s => s.Sets).ToList();
+            if (sets.Count > 0)
+            {
+                _context.SetLogs.RemoveRange(sets);
+            }
+
+            _context.WorkoutSessions.RemoveRange(sessions);
+        }
+
+        // 2) Remove all exercise links for this workout
+        if (workout.Exercises.Any())
+        {
+            _context.WorkoutExerciseTemplates.RemoveRange(workout.Exercises);
+        }
+
+        // 3) Remove the workout itself
+        _context.Workouts.Remove(workout);
+
+        await _context.SaveChangesAsync();
+
+        // Back to the program details
+        return RedirectToAction("Details", "FitnessPrograms", new { id = programId });
+    }
+    
+    // GET: /Workouts/EditExercise/5
+    public async Task<IActionResult> EditExercise(int id)
+    {
+        var link = await _context.WorkoutExerciseTemplates
+            .Include(x => x.ExerciseTemplate)
+            .FirstOrDefaultAsync(x => x.Id == id);
+
+        if (link == null) return NotFound();
+
+        var exercises = await _context.ExerciseTemplates.ToListAsync();
+
+        var model = new EditWorkoutExerciseModel
+        {
+            Id = link.Id,
+            WorkoutId = link.WorkoutId,
+            ExerciseTemplateId = link.ExerciseTemplateId,
+            AvailableExercises = exercises,
+            RecommendedSets = link.RecommendedSets,
+            RecommendedReps = link.RecommendedReps,
+            RecommendedWeight = link.RecommendedWeight,
+            Notes = link.Notes
+        };
+
+        return View(model);
+    }
+
+    // POST: /Workouts/EditExercise
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> EditExercise(EditWorkoutExerciseModel model)
+    {
+        // ensure the selected exercise still exists
+        var exerciseExists = await _context.ExerciseTemplates
+            .AnyAsync(e => e.Id == model.ExerciseTemplateId);
+
+        if (!exerciseExists)
+        {
+            ModelState.AddModelError("ExerciseTemplateId", "Selected exercise does not exist.");
+        }
+
+        if (!ModelState.IsValid)
+        {
+            model.AvailableExercises = await _context.ExerciseTemplates.ToListAsync();
+            return View(model);
+        }
+
+        var link = await _context.WorkoutExerciseTemplates
+            .FirstOrDefaultAsync(x => x.Id == model.Id);
+
+        if (link == null) return NotFound();
+
+        link.ExerciseTemplateId = model.ExerciseTemplateId;        // 👈 change exercise
+        link.RecommendedSets = model.RecommendedSets;
+        link.RecommendedReps = model.RecommendedReps;
+        link.RecommendedWeight = model.RecommendedWeight;
+        link.Notes = model.Notes;
+
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Details), new { id = link.WorkoutId });
     }
 }

@@ -1,5 +1,5 @@
 @model FlexWise_Prototype.Entities.FitnessProgram
-
+@using FlexWise_Prototype.Enums
 <h1>Create Fitness Program</h1>
 
 <form method="post">
@@ -24,14 +24,12 @@
     </div>
 
     <div class="form-group">
-        <label>Duration</label>
-        <select class="form-control" name="Duration">
-            <option>OneWeek</option>
-            <option>TwoWeeks</option>
-            <option>ThreeWeeks</option>
-            <option>OneMonth</option>
-        </select>
-    </div>
+    <label asp-for="ProgramDuration"></label>
+    <select asp-for="ProgramDuration"
+            class="form-control"
+            asp-items="Html.GetEnumSelectList<ProgramDuration>()">
+    </select>
+</div>
 
     <button class="btn btn-success mt-3" type="submit">Create</button>
 </form>

@@ -50,7 +50,12 @@ else
                 <td>@e.RecommendedSets x @e.RecommendedReps</td>
                 <td>@e.Notes</td>
                 <td>
-                    @* later: add Edit link here *@
+                    <a asp-controller="Workouts"
+                       asp-action="EditExercise"
+                       asp-route-id="@e.Id"
+                       class="btn btn-sm btn-outline-secondary me-1">
+                        Edit
+                    </a>
                     <form asp-controller="Workouts"
                           asp-action="RemoveExercise"
                           method="post"
